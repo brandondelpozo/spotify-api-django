@@ -1,4 +1,4 @@
-from rest_framework import generics
+from rest_framework import generics  # new
 from .models import Album
 from .serializers import AlbumSerializer
 
