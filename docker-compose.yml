@@ -3,9 +3,9 @@ version: '3.8'
 services:
   web:
     build: .
-    command: python /spotify-api/manage.py runserver 0.0.0.0:8000
+    command: python /spotify-api-django/manage.py runserver 0.0.0.0:8000
     volumes:
-      - .:/spotify-api
+      - .:/spotify-api-django
     ports:
       - 8000:8000
     depends_on:

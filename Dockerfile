@@ -4,9 +4,9 @@ FROM python:3.8
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 # Set work directory
-WORKDIR /spotify-api
+WORKDIR /spotify-api-django
 # Install dependencies
-COPY Pipfile Pipfile.lock /spotify-api/
+COPY Pipfile Pipfile.lock /spotify-api-django/
 RUN pip install pipenv && pipenv install --system
 # Copy project
-COPY . /spotify-api/
+COPY . /spotify-api-django/
